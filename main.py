@@ -5,13 +5,23 @@ command = sys.argv[1]
 if command== 'list':
     get_list()
 elif command == 'create_file':
-    pass
+    name= sys.argv[2]
+    create_file(name)
 elif command == 'create_folder':
-    pass
+    name = sys.argv[2]
+    create_folder(name)
 elif command == 'delete':
-    pass
+    name = sys.argv[2]
+    delete_file(name)
 elif command == 'copy':
-    pass
+    name = sys.argv[2]
+    new_name = sys.argv[3]
+    copy_file(name, new_name)
 elif command == 'help':
-    print(' Ну что, помогло?')
+    print(' list -список файлов или папок')
+    print('create_file - создание файла')
+    print('create_folder - создание папки')
+    print('delete - удаление файла или папки')
+    print('copy - копирование файла или папки')
+
 
