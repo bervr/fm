@@ -52,4 +52,4 @@ if __name__ == '__main__':
     # delete_file('123')
     # copy_file('name1','name123')
     # copy_file('123', 'name_1')
-    # save_info('rere')
+    save_info('rere')
