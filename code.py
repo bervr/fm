@@ -40,7 +40,7 @@ def copy_file(name,new_name):
 def save_info(message):
     current_time= datetime.datetime.now()
     result = f'{current_time} - {message}'
-    with open ('log.txt', 'a', encoding='utf-8') as f:
+    with open (r"C:\Users\philippov\.PyCharmCE2019.3\fileCommander\log.txt", 'a', encoding='utf-8') as f:
         f.write(result + '\n')
 
 def change_dir(path):
