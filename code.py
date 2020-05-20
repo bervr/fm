@@ -43,6 +43,14 @@ def save_info(message):
     with open ('log.txt', 'a', encoding='utf-8') as f:
         f.write(result + '\n')
 
+def change_dir(path):
+    cwd = os.getcwd()
+    try:
+        os.chdir(path)
+    except FileNotFoundError:
+       print(f'Папки {path} не существует')
+    finally:
+        print(f'Текущая папка {os.getcwd()}' )
 
 if __name__ == '__main__':
     # create_file('123', 'some text')
@@ -52,4 +60,6 @@ if __name__ == '__main__':
     # delete_file('123')
     # copy_file('name1','name123')
     # copy_file('123', 'name_1')
-    save_info('rere')
+    #save_info('rere')
+    change_dir(r"C:\Users\philippov\.PyCharmCE2019.3")
+    #get_list()
