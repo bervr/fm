@@ -1,5 +1,6 @@
 import sys
 from code import create_file, create_folder, delete_file, copy_file, save_info, get_list, change_dir
+from guess import game_guess
 # get_list()
 save_info('Начало')
 command = sys.argv[1]
@@ -46,6 +47,9 @@ elif command =='cd':
     else:
         change_dir(path)
 
+elif command =='!':
+    game_guess()
+
 elif command == 'help':
     print('list -список файлов или папок')
     print('create_file - создание файла')
@@ -53,6 +57,7 @@ elif command == 'help':
     print('delete - удаление файла или папки')
     print('copy - копирование файла или папки')
     print('cd - сменить текущую директорию')
+    print('! - поиграться')
 
 save_info('Конец')
 
